@@ -63,11 +63,13 @@
 (defn title-length [book]
   (count (:title book)))
 
+;; Exercise 11
 (defn author-count [book]
   (count (:authors book)))
 
+;; Exercise 12
 (defn multiple-authors? [book]
-  :-)
+  (<= 2 (author-count book)))
 
 (defn add-author [book new-author]
   :-)
