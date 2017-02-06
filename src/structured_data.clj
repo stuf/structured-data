@@ -21,6 +21,9 @@
 (defn rectangle [bottom-left top-right]
   [bottom-left top-right])
 
+(defn testing [v1 v2]
+  (let [[vx1 vy1] v1]))
+
 (defn width [rectangle]
   (let [[[x1 y1] [x2 y2]] rectangle]
     (- x2 x1)))
@@ -47,8 +50,14 @@
       true
       false)))
 
+;; Exercise 9
 (defn contains-rectangle? [outer inner]
-  :-)
+  (let [[[ox1 oy1] [ox2 oy2]] outer
+        [[ix1 iy1] [ix2 iy2]] inner]
+    (if (and (<= ox1 ix1 ix2 ox2)
+             (<= oy1 iy1 iy2 oy2))
+      true
+      false)))
 
 (defn title-length [book]
   :-)
