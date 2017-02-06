@@ -71,8 +71,12 @@
 (defn multiple-authors? [book]
   (<= 2 (author-count book)))
 
+;; Exercise 13
 (defn add-author [book new-author]
-  :-)
+  (let [original book
+        authors (:authors original)
+        updated (conj authors new-author)]
+    (assoc book :authors updated)))
 
 (defn alive? [author]
   :-)
