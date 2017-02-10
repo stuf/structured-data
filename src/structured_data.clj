@@ -84,8 +84,10 @@
 (defn element-lengths [collection]
   (map count collection))
 
+;; Exercise 16
 (defn second-elements [collection]
-  :-)
+  (let [snd (fn [x] (get x 1))]
+    (map snd collection)))
 
 (defn titles [books]
   :-)
