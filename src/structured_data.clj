@@ -73,14 +73,14 @@
 
 ;; Exercise 13
 (defn add-author [book new-author]
-  (let [original book
-        authors (:authors original)
-        updated (conj authors new-author)]
-    (assoc book :authors updated)))
+  (let [authors (:authors book)]
+    (assoc book :authors (conj authors new-author))))
 
+;; Exercise 14
 (defn alive? [author]
-  :-)
+  (not (contains? author :death-year)))
 
+;; Exercise 15
 (defn element-lengths [collection]
   :-)
 
