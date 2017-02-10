@@ -82,7 +82,7 @@
 
 ;; Exercise 15
 (defn element-lengths [collection]
-  :-)
+  (map count collection))
 
 (defn second-elements [collection]
   :-)
