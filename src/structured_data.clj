@@ -89,8 +89,9 @@
   (let [snd (fn [x] (get x 1))]
     (map snd collection)))
 
+;; Exercise 17
 (defn titles [books]
-  :-)
+  (map :title books))
 
 (defn monotonic? [a-seq]
   :-)
