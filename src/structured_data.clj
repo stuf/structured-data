@@ -93,10 +93,12 @@
 (defn titles [books]
   (map :title books))
 
-(defn monotonic? [a-seq]
-  :-)
-
+;; Exercise 18
 (defn stars [n]
+  (apply str (repeat n "*")))
+
+;; Exercise 19
+(defn monotonic? [a-seq]
   :-)
 
 (defn toggle [a-set elem]
