@@ -99,7 +99,8 @@
 
 ;; Exercise 19
 (defn monotonic? [a-seq]
-  :-)
+  (or (apply <= a-seq)
+      (apply >= a-seq)))
 
 (defn toggle [a-set elem]
   :-)
