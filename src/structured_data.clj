@@ -120,8 +120,10 @@
   (let [a-set (:authors book)]
     (assoc book :authors (set a-set))))
 
+;; Exercise 23
 (defn has-author? [book author]
-  :-)
+  (let [authors (:authors book)]
+    (contains? authors author)))
 
 (defn authors [books]
   :-)
