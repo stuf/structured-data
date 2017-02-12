@@ -102,8 +102,11 @@
   (or (apply <= a-seq)
       (apply >= a-seq)))
 
+;; Exercise 20
 (defn toggle [a-set elem]
-  :-)
+  (if (contains? a-set elem)
+    (disj a-set elem)
+    (conj a-set elem)))
 
 (defn contains-duplicates? [a-seq]
   :-)
