@@ -115,8 +115,10 @@
     false
     true))
 
+;; Exercise 22
 (defn old-book->new-book [book]
-  :-)
+  (let [a-set (:authors book)]
+    (assoc book :authors (set a-set))))
 
 (defn has-author? [book author]
   :-)
