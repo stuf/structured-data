@@ -125,11 +125,14 @@
   (let [authors (:authors book)]
     (contains? authors author)))
 
+;; Exercise 24
 (defn authors [books]
-  :-)
+  (apply clojure.set/union
+         (map :authors books)))
 
+;; Exercise 25
 (defn all-author-names [books]
-  :-)
+  (clojure.set/union (set (map :name (authors books)))))
 
 (defn author->string [author]
   :-)
